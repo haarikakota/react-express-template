@@ -1,5 +1,7 @@
+//Importing Dependencies
 import React, { Component } from "react";
 
+//Importing Styles
 import "./customers.css";
 
 class Customers extends Component {
@@ -9,6 +11,7 @@ class Customers extends Component {
   }
 
   componentDidMount() {
+    //Fetching data from API and setState
     fetch("/api/customers")
       .then((res) => res.json())
       .then((customers) =>
@@ -20,7 +23,7 @@ class Customers extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container text-center">
         <h2>Customers</h2>
         <ul>
           {this.state.customers.map((customer) => (
