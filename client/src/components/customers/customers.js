@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 
 //Importing Styles
-import "./customers.css";
+import "./customers.scss";
 
 class Customers extends Component {
   constructor() {
